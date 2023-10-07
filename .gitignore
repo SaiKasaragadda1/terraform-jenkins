@@ -1,24 +1,9 @@
-# Compiled Object files
-*.o
-*.obj
+#  Local .terraform directories
+**/.terraform/*
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+# .tfstate files
+*.tfstate
+*.tfstate.*
 
-# Compiled Static libraries
-*.a
-*.lib
-
-# Executables
-*.exe
-
-# DUB
-.dub
-docs.json
-__dummy.html
-docs/
-
-# Code coverage
-*.lst
+# .tfvars files
+*.tfvars
