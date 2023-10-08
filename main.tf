@@ -20,10 +20,10 @@ resource "aws_instance" "example" {
   }
 }
 
-resource "aws_security_group" "sai_securitygroup" {
-  name        = "sai_securitygroup"
-  description = "Allow TLS inbound traffic"
-  vpc_id      = vpc-0beed584dea86fdbe
+resource "aws_security_group" "sai_security" {
+  name        = "security group using terraform"
+  description = "security group using terraform"
+  vpc_id      = "vpc-0beed584dea86fdbe"
 
   ingress {
     description      = "TLS from VPC"
@@ -43,6 +43,6 @@ resource "aws_security_group" "sai_securitygroup" {
   }
 
   tags = {
-    Name = "sai_securitygroup"
+    Name = "sai_security"
   }
 }
