@@ -26,7 +26,7 @@ resource "aws_security_group" "sai_security" {
   vpc_id      = "vpc-0beed584dea86fdbe"
 
   ingress {
-    description      = "TLS from VPC"
+    description      ="HTTP"
     from_port        = 443
     to_port          = 443
     protocol         = "tcp"
